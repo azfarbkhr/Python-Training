@@ -1,0 +1,13 @@
+Patient ID,Patient Name,Admission Status,Date of Birth,Admission Date,Diagnosis,Pending Amount
+1,A,Admitted,5-May-22,26-Sep-22,,
+2,a,DISCHARGED,,,,
+3,na,na,na,na,na,
+4,c,na,na,na,,
+5,NM3,DISCHARGED,9-May-94,25-May-22,lukemia,5.0
+6,AG Leather Wala,Admitted,25-May-94,9/26/2022 18:13,,
+7,AG Leather Wala,Admitted,25-May-94,9/26/2022 18:15,fever,
+8,AZ,Admitted,,9/26/2022 18:18,,
+9,az,Admitted,25-May-22,9/26/2022 20:20,na,
+10,NM,Admitted,25-May-00,9/26/2022 20:32,,
+11,NM2,Admitted,,2022-09-26 20:33:09,,
+12,Nm4,Admitted,,2022-09-26 20:37:01,,

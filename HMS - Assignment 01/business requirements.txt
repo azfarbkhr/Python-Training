@@ -1,0 +1,121 @@
+Objective
+To Create a hospital management system with all the necessary features to like as rooms available, no of patients registered, doctors available, disease diagnoses, etc
+
+Changes Required
+1) Show a message "Welcome to Hospital management system, Please add a record to continue"
+1.1) The following keys will be used to add a patient, staff member, rooms available, etc
+Keys	Used for
+1	Add patient with details
+2	Add a staff member with details
+3	Add room details
+
+2) The inputs for adding patients will be:
+Variables	Data Type
+Patient ID	Integer
+Patient Name	String
+Patient Status	Boolean
+Patient Age	Integer
+Registered Date	Date
+Disease Identified	Status
+Room Assigned	Integer
+Doctor Assigned	String
+Doctor Id	Integer
+
+3) The Inputs for adding staff members will be:
+Variable	Type
+Staff Id	Integers
+Name	String
+Age	Float
+Status	Boolean
+Experience	Float
+Designation	String
+Shift/Timing	String
+Department	String
+Salary	Float/integer
+
+4) The inputs for adding rooms will be:
+Variables	Data Types
+Room No	Integer
+Status	Boolean
+Room Class (Economy, Business)	String
+Bed Available	Integer
+Charges Per day	Float/integer
+Assigned to (Patient Id)	Integer
+Assigned Date	DateTime
+
+5) For adding patients, staff members, and rooms the 0 key will function as save records
+
+Note: All the fields are mandatory for adding, patients, Staff members, and rooms if a user left a mandatory field empty and presses the save record key then show a message "[X]Mandatory field missing" and open the input box to take input in that particular field again
+where X will be the name of the mandatory field which is missing. 
+
+6) Keys used for viewing details of patients, staff members, and rooms:
+Keys	Used for
+10	Patients Details
+20	Staff members Details
+30	Rooms
+6.1) Key 100 will be used to filter out particular record details, and 200 will be used to get all details
+
+6.2) The logic for filtering out particular record details will be:
+
+Given
+         a user wants to view details of a patient whose patient id is 1002
+Action
+      The user will press key 10 for viewing patient details, a dialog box will appear
+IF
+   the user enters key 100, the system will ask the user for the id to be filtered,
+   the user provides id 1002, then the system will only show details for id 1002 
+Elif
+    the user enter key 200, then the system will show details of all the patient registered
+
+Note: The above case will also be applicable for viewing details of staff members and rooms
+
+
+7) Keys used for updating records
+7.1) The key used for updating any record will be 150
+7.2) It will be used with the initials (P, S, R) to update either Patients, Staff, or Rooms
+I.e if a user wants to update the patient's record then the Key will be 150P
+if the user wants to update the rooms record then the Key will be 150R
+
+7.3) The following will be the keys used for updating the patient's record:
+Keys Used	Fields to Update
+PI	Patient ID
+PN	Patient Name
+PS	Patient Status
+PA	Patient Age
+RD	Registered Date
+DI	Disease Identified
+RA	Room Assigned
+DA	Doctor Assigned
+DI	Doctor Id
+
+7.4) The following will be the used keys for updating staff records:
+Keys	Fields to update
+SI	Staff Id
+N	Name
+A	Age
+S	Status
+EP	Experience
+DG	Designation
+ST	Shift/Timing
+DPT	Department
+SAL	Salary
+
+7.5) The following will be the keys used for updating rooms records:
+Keys	Fields to update
+RN	Room No
+S	Status
+RC	Room Class (Economy, Business)
+BA	Bed Available
+CPD	Charges Per day
+AT	Assigned to (Patient Id)
+AD	Assigned Date
+
+8) The key used for deleting any record will be 300
+8.1) It will be used with the initials (P, S, R) to delete either Patients, Staff, or Rooms
+i.e if the user wants to delete a particular patient id 1002 then the user needs to press key 300P:
+a dialog box will appear asking the user to provide the patient id to be deleted
+The user provides the patient id and presses 300 again to delete that particular patient record
+Note: the above example is applicable to the rooms and staff as well
+
+Rationale
+It will help the hospital admin and staff manage hospital operations more efficiently
